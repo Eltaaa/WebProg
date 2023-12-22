@@ -1,0 +1,60 @@
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 50%;
+  background-color: #bbbbbb;
+}
+
+.right {
+  width: 50%;
+  background-color: #aaaaaa;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* @font-face { */
+/* font-family: myWebFont; */
+/* font-style: NORMAL_OR_ITALIC; */
+/* font-weight: NUMERIC_WEIGHT_VALUE; */
+/* src: url(fonts/Mali-Regular.ttf); */
+/* } */
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  align-items: center;
+  /* ^ = horizontally center? */
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  /* ^ vertically center */
+}
+
+table,
+th,
+td {
+  /* max-width: 100%; */
+  font-size: 18px;
+  border: solid 0.5px;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  width: fit-content;
+  border-spacing: 0;
+}
+
+.out {
+  color: #8c52ff;
+}
