@@ -1,0 +1,75 @@
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+.left {
+    width: 50%;
+    background-color: #bbbbbb;
+}
+
+.right {
+    width: 50%;
+    background-color: #aaaaaa;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* @font-face { */
+/* font-family: myWebFont; */
+/* font-style: NORMAL_OR_ITALIC; */
+/* font-weight: NUMERIC_WEIGHT_VALUE; */
+/* src: url(fonts/Mali-Regular.ttf); */
+/* } */
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    background-color: #808080;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.main-image {
+    padding: 1rem;
+    background-color: white;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+    margin-bottom: 1rem;
+}
+
+#textunderimage {
+    width: 95%;
+    text-align: center;
+}
+
+#timeline {
+    flex-direction: column;
+    width: 50%;
+    /* background-color: white; */
+    margin-bottom: 4rem;
+}
+
+
+h3 {
+    text-align: left;
+    /* margin-left: 5%; */
+
+}
+
+li {
+    margin-top: 10px;
+}
