@@ -1,0 +1,9 @@
+.font-title {
+  font-size: 15rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
