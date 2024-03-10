@@ -79,7 +79,7 @@
   }
 
   $servername = "localhost";
-  $username = "root"; //ตามที่กำหนดให้
+  $username = "localhost"; //ตามที่กำหนดให้
   $password = ""; //ตามที่กำหนดให้
   $dbname = "s163h";    //ตามที่กำหนดให้
 
